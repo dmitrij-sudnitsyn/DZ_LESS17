@@ -55,10 +55,10 @@ lst=mStack()
 
 while True:
  os.system('CLS')     
- m=mMenuStack()    
+ m=mMenStack()    
  print(f"Вы ввели {m}")
  if int(m)==1:
-   str=into("Введите строку") 
+   str=input("Введите строку: ") 
    lst.add(str)
  elif int(m)==2:
    lst.out()
