@@ -51,10 +51,12 @@ lst.add("Витя")
 # print(lst.getlast())
 # lst.print()
 # # print("Введите список ")
-
+os.system('cls')  
+# os.system("clear")
 
 while True:
- os.system('CLS')     
+ system("cls") 
+ system("clear")  
  m=mMenStack()    
  if int(m)==1:
    str=input("Введите строку: ") 
