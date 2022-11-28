@@ -39,7 +39,7 @@ def mMenStack():
     print("6. очистку стека")    
     print("7. получение значения без выталкивания верхней строки из стека")        
     print("8. Выход ")
-    m=input("Введите значение ")
+    m=input("Введите значение: ")
     return m
 
 lst=mStack()
@@ -51,12 +51,11 @@ lst.add("Витя")
 # print(lst.getlast())
 # lst.print()
 # # print("Введите список ")
-os.system('cls')  
-# os.system("clear")
-
+os.system("cls")  
+# os.system('clear')
+# m=mMenStack()    
 while True:
- system("cls") 
- system("clear")  
+ os.system("cls") 
  m=mMenStack()    
  if int(m)==1:
    str=input("Введите строку: ") 
@@ -72,7 +71,7 @@ while True:
    lst.print()
    input("Для продолжения введите любую клавишу")
  elif int(m)==4:
-   print(lst.isNone()) 
+#    print(lst.isNone()) 
    if lst.isNone():
     print("Стек пустой") 
     lst.print()   
