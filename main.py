@@ -43,8 +43,8 @@ def mMenStack():
     return m
 
 lst=mStack()
-# lst.add("Дима")
-# lst.add("Витя")
+lst.add("Дима")
+lst.add("Витя")
 # lst.add("Коля")
 # lst.add("RRRR")
 # lst.print()
@@ -56,24 +56,36 @@ lst=mStack()
 while True:
  os.system('CLS')     
  m=mMenStack()    
- print(f"Вы ввели {m}")
+#  
+# print(f"Вы ввели {m}")
  if int(m)==1:
    str=input("Введите строку: ") 
    lst.add(str)
+   input("Для продолжения введите любую клавишу")
  elif int(m)==2:
    lst.out()
+   input("Для продолжения введите любую клавишу")
  elif int(m)==3:
+  
     print(lst.getCol()) 
+    lst.print()
+    input("Для продолжения введите любую клавишу")
  elif int(m)==4:
-    if lst.isNone:
+    
+    if lst.isNone():
        print("Стек пустой") 
+    lst.print()   
+    input("Для продолжения введите любую клавишу")   
  elif int(m)==5:
-    if lst.isFull:
+    if lst.isFull():
         print("Стек полон")      
+    input("Для продолжения введите любую клавишу")    
  elif int(m)==6:
      lst.clear()
+     input("Для продолжения введите любую клавишу")
  elif int(m)==7:
     print(lst.getlast())     
+    input("Для продолжения введите любую клавишу") 
  elif int(m)==8:
   os.system('CLS') 
   quit()

@@ -53,6 +53,7 @@ class mStack:
           return self.__stack.pop()         
 
     def isNone(self):
+        # print(f"количество = {len(self.__stack)}")
         if len(self.__stack)==0:
             return True
         else:
