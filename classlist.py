@@ -27,12 +27,8 @@ class mList:
 
 class mStack:
     def __init__(self,a=0) -> None:
-        if a==0:
-           self.__stack=[]
-           self.MaxElem=0
-        else:
-           self.__stack=[]
-           self.MaxElem=a
+        self.__stack=[]
+        self.MaxElem=0
 
     def add(self,value):
         if self.MaxElem!=0:
