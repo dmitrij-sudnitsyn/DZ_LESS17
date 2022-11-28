@@ -59,9 +59,11 @@ while True:
  if int(m)==1:
    str=input("Введите строку: ") 
    lst.add(str)
+   lst.print()
    input("Для продолжения введите любую клавишу")
  elif int(m)==2:
-   lst.out()
+   print(lst.out())
+   lst.print()
    input("Для продолжения введите любую клавишу")
  elif int(m)==3:
    print(lst.getCol()) 
@@ -72,16 +74,23 @@ while True:
    if lst.isNone():
     print("Стек пустой") 
     lst.print()   
+   else:
+    print("В стеке есть значения")  
+    lst.print()
     input("Для продолжения введите любую клавишу" )   
  elif int(m)==5:
     if lst.isFull():
         print("Стек полон")      
+        lst.print()    
     input("Для продолжения введите любую клавишу"  )    
  elif int(m)==6:
      lst.clear()
+     lst.print()
      input("Для продолжения введите любую клавишу" )
  elif int(m)==7:
-    print(lst.getlast())     
+    lst.print()
+    print(f"Верхнее значение  {lst.getlast()}")     
+    lst.print()
     input("Для продолжения введите любую клавишу"  ) 
  elif int(m)==8:
   os.system('CLS') 
