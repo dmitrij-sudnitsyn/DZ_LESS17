@@ -54,8 +54,26 @@ lst=mStack()
 
 
 while True:
+ os.system('CLS')     
  m=mMenuStack()    
  print(f"Вы ввели {m}")
- if int(m)==6:
+ if int(m)==1:
+   str=into("Введите строку") 
+   lst.add(str)
+ elif int(m)==2:
+   lst.out()
+ elif int(m)==3:
+    print(lst.getCol()) 
+ elif int(m)==4:
+    if lst.isNone:
+       print("Стек пустой") 
+ elif int(m)==5:
+    if lst.isFull:
+        print("Стек полон")      
+ elif int(m)==6:
+     lst.clear()
+ elif int(m)==7:
+    print(lst.getlast())     
+ elif int(m)==8:
   os.system('CLS') 
   quit()

@@ -70,5 +70,10 @@ class mStack:
             self.__stack.append(str)
             return str
 
+    def clear(self):
+        for i in self._stack:
+          self.__stack.pop() 
+
+
     def print(self):
         print(self.__stack)      
