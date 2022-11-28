@@ -43,6 +43,8 @@ class mStack:
         else:
          self.__stack.append(value)   
 
+    def getCol(self):     
+        return len(self.__stack)
 
     def out(self):
         if len(self.__stack)==0:
@@ -62,7 +64,7 @@ class mStack:
         else:
             return False    
 
-    def get(self):
+    def getlast(self):
         if len(self.__stack)>0:
             str=self.__stack.pop()
             self.__stack.append(str)

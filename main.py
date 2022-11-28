@@ -43,17 +43,19 @@ def mMenStack():
     return m
 
 lst=mStack()
-lst.add("Дима")
-lst.add("Витя")
-lst.add("Коля")
-lst.add("RRRR")
-lst.print()
-# print("Введите список ")
+# lst.add("Дима")
+# lst.add("Витя")
+# lst.add("Коля")
+# lst.add("RRRR")
+# lst.print()
+# print(lst.getlast())
+# lst.print()
+# # print("Введите список ")
 
 
-# while True:
-#  m=mMenuStack()    
-#  print(f"Вы ввели {m}")
-#  if int(m)==6:
-#   os.system('CLS') 
-#   quit()
+while True:
+ m=mMenuStack()    
+ print(f"Вы ввели {m}")
+ if int(m)==6:
+  os.system('CLS') 
+  quit()
