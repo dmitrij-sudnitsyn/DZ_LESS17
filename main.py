@@ -56,8 +56,6 @@ lst.add("Витя")
 while True:
  os.system('CLS')     
  m=mMenStack()    
-#  
-# print(f"Вы ввели {m}")
  if int(m)==1:
    str=input("Введите строку: ") 
    lst.add(str)
@@ -66,26 +64,25 @@ while True:
    lst.out()
    input("Для продолжения введите любую клавишу")
  elif int(m)==3:
-  
-    print(lst.getCol()) 
-    lst.print()
-    input("Для продолжения введите любую клавишу")
+   print(lst.getCol()) 
+   lst.print()
+   input("Для продолжения введите любую клавишу")
  elif int(m)==4:
-    
-    if lst.isNone():
-       print("Стек пустой") 
+   print(lst.isNone()) 
+   if lst.isNone():
+    print("Стек пустой") 
     lst.print()   
-    input("Для продолжения введите любую клавишу")   
+    input("Для продолжения введите любую клавишу" )   
  elif int(m)==5:
     if lst.isFull():
         print("Стек полон")      
-    input("Для продолжения введите любую клавишу")    
+    input("Для продолжения введите любую клавишу"  )    
  elif int(m)==6:
      lst.clear()
-     input("Для продолжения введите любую клавишу")
+     input("Для продолжения введите любую клавишу" )
  elif int(m)==7:
     print(lst.getlast())     
-    input("Для продолжения введите любую клавишу") 
+    input("Для продолжения введите любую клавишу"  ) 
  elif int(m)==8:
   os.system('CLS') 
   quit()

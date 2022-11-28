@@ -53,11 +53,11 @@ class mStack:
           return self.__stack.pop()         
 
     def isNone(self):
-        # print(f"количество = {len(self.__stack)}")
+        print(f"количество = {len(self.__stack)}")
         if len(self.__stack)==0:
             return True
         else:
-            return False 
+            return False
 
     def isFull(self):            
         if len(self.__stack)==self.MaxElem:
@@ -72,7 +72,7 @@ class mStack:
             return str
 
     def clear(self):
-        for i in self._stack:
+        for i in len(self._stack):
           self.__stack.pop() 
 
 
