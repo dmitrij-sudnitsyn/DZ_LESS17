@@ -35,10 +35,14 @@ class mStack:
            self.MaxElem=a
 
     def add(self,value):
-        if len(self.__stack)<self.MaxElem:
-            self.__stack.append(value)   
+        if self.MaxElem!=0:
+            if len(self.__stack)<self.MaxElem and self.MaxElem!=0:
+             self.__stack.append(value)   
+            else:
+             print("Добавление нового элемента не возжно вы достигли максимального значения размера стека")
         else:
-            print("Добавление нового элемента не возжно вы достигли максимального значения размера стека")
+         self.__stack.append(value)   
+
 
     def out(self):
         if len(self.__stack)==0:

@@ -8,6 +8,7 @@
 # 5. Заменить значение в списке (пользователь определяет заменить ли только первое вхождение или все вхождения).
 import os
 import sys
+from classlist import mStack
 
 
 def mMenu():
@@ -41,14 +42,12 @@ def mMenStack():
     m=input("Введите значение ")
     return m
 
-
-lst=[7]
-lst.append(3)
-lst.append(5)
-lst.append(7)
-print(lst)
-print(len(lst))
-
+lst=mStack()
+lst.add("Дима")
+lst.add("Витя")
+lst.add("Коля")
+lst.add("RRRR")
+lst.print()
 # print("Введите список ")
 
 
