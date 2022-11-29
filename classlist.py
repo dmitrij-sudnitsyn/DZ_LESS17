@@ -43,10 +43,13 @@ class mStack:
         return len(self.__stack)
 
     def out(self):
-        if len(self.__stack)==0:
-          return None
-        else:
-          return self.__stack.pop()         
+        for i in range(len(self.__stack)):
+            print(self.__stack.pop()) 
+
+        # if len(self.__stack)==0:
+        #   return None
+        # else:
+        #   return self.__stack.pop()         
 
     def isNone(self):
         print(f"количество = {len(self.__stack)}")

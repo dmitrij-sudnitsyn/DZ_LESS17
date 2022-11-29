@@ -43,9 +43,16 @@ def mMenStack():
     m=input("Введите значение: ")
     return m
     
-n=input("Стек должен быть фиксированного размера? Если да введите размерость стека")
 
-lst=mStack(5)
+n=input("Стек должен быть фиксированного размера? Если да введите размерость стека. 0 если не фиксированного размера.")
+if n.isdigit():
+ lst=mStack(int(n))
+else:
+  print("Вы введи не число")
+  quit()
+
+
+
 lst.add("Дима")
 lst.add("Витя") 
 os.system("cls")  
@@ -58,8 +65,8 @@ while True:
    lst.print()
    input("Для продолжения введите любую клавишу")
  elif int(m)==2:
-   print(lst.out())
-   lst.print()
+   lst.out()
+  #  lst.print()
    input("Для продолжения введите любую клавишу")
  elif int(m)==3:
    print(lst.getCol()) 
