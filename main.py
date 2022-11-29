@@ -43,7 +43,7 @@ def mMenStack():
     m=input("Введите значение: ")
     return m
 
-lst=mStack()
+lst=mStack(5)
 lst.add("Дима")
 lst.add("Витя")
 # lst.add("Коля")
@@ -94,7 +94,7 @@ while True:
     print(f"Верхнее значение  {lst.getlast()}")     
     lst.print()
     input("Для продолжения введите любую клавишу"  ) 
- elif int(m)==6:
+ elif int(m)==8:
      lst.print()
      input("Для продолжения введите любую клавишу" )
  elif int(m)==9:
