@@ -76,7 +76,7 @@ while True:
     print("Стек пустой") 
     lst.print()   
    else:
-    print("В стеке есть значения")  
+    print("Стек не пуст")  
     lst.print()
     input("Для продолжения введите любую клавишу" )   
  elif int(m)==5:

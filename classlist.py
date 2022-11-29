@@ -28,11 +28,11 @@ class mList:
 class mStack:
     def __init__(self,a=0) -> None:
         self.__stack=[]
-        self.MaxElem=0
+        self.MaxElem=a
 
     def add(self,value):
         if self.MaxElem!=0:
-            if len(self.__stack)<self.MaxElem and self.MaxElem!=0:
+            if len(self.__stack)<=self.MaxElem:
              self.__stack.append(value)   
             else:
              print("Добавление нового элемента не возжно вы достигли максимального значения размера стека")
