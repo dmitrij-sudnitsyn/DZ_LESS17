@@ -42,19 +42,13 @@ def mMenStack():
     print("9. Выход ")
     m=input("Введите значение: ")
     return m
+0    
+n=input("Стек должен быть фиксированного размера? Если да введите размерость стека")
 
 lst=mStack(5)
 lst.add("Дима")
 lst.add("Витя")
-# lst.add("Коля")
-# lst.add("RRRR")
-# lst.print()
-# print(lst.getlast())
-# lst.print()
-# # print("Введите список ")
 os.system("cls")  
-# os.system('clear')
-# m=mMenStack()    
 while True:
  os.system("cls") 
  m=mMenStack()    
