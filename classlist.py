@@ -32,7 +32,7 @@ class mStack:
 
     def add(self,value):
         if self.MaxElem!=0:
-            if len(self.__stack)<=self.MaxElem:
+            if len(self.__stack)<self.MaxElem:
              self.__stack.append(value)   
             else:
              print("Добавление нового элемента не возжно вы достигли максимального значения размера стека")
