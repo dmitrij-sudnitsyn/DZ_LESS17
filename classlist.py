@@ -68,8 +68,8 @@ class mStack:
             return str
 
     def clear(self):
-        for i in len(self._stack):
-          self.__stack.pop() 
+        # for i in len(self._stack):
+          self.__stack.clear()
 
 
     def print(self):

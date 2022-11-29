@@ -38,7 +38,8 @@ def mMenStack():
     print("5. проверку полный ли стек")
     print("6. очистку стека")    
     print("7. получение значения без выталкивания верхней строки из стека")        
-    print("8. Выход ")
+    print("8. Показать стек")         
+    print("9. Выход ")
     m=input("Введите значение: ")
     return m
 
@@ -93,6 +94,9 @@ while True:
     print(f"Верхнее значение  {lst.getlast()}")     
     lst.print()
     input("Для продолжения введите любую клавишу"  ) 
- elif int(m)==8:
+ elif int(m)==6:
+     lst.print()
+     input("Для продолжения введите любую клавишу" )
+ elif int(m)==9:
   os.system('CLS') 
   quit()
